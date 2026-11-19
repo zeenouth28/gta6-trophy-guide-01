@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Ledger — GTA VI Trophy Guide &amp; Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div>
+    <h1>Leonida Ledger</h1>
+    <p class="sub">GTA VI trophy guide &amp; tracker — offline, open source, free. 55 trophies: 1 platinum, 2 gold, 6 silver, 46 bronze. Difficulty 4/10, about 200 hours.</p>
+  </div>
+  <div class="platinum-box">
+    <div class="big" id="earned-count">0 / 55</div>
+    <div class="small" id="platinum-note">Platinum: Vice Got a Price!</div>
+    <div class="bar"><div id="progress-fill"></div></div>
+  </div>
+</header>
+<nav id="tabs">
+  <button data-tab="tracker" class="active" type="button">Tracker</button>
+  <button data-tab="roadmap" type="button">Roadmap</button>
+  <button data-tab="missables" type="button">Missables</button>
+  <button data-tab="planner" type="button">Next up</button>
+  <button data-tab="sources" type="button">Sources</button>
+</nav>
+
+<section id="tab-tracker" class="tab active">
+  <div class="controls">
+    <label>Search <input id="search" type="search" placeholder="trophy, mission, keyword…"></label>
+    <label>Kind <select id="kind"><option value="all">All kinds</option><option value="story">Story</option><option value="activity">Activity</option><option value="robbery">Robbery</option><option value="collectible">Collectible</option><option value="misc">Other</option></select></label>
+    <label>Grade <select id="grade"><option value="all">All grades</option><option value="platinum">Platinum</option><option value="gold">Gold</option><option value="silver">Silver</option><option value="bronze">Bronze</option></select></label>
+    <label><input id="hide-earned" type="checkbox"> Hide earned</label>
+    <label><input id="spoilers" type="checkbox" checked> Hide story spoilers until earned</label>
+    <button id="export" type="button">Export progress</button>
+    <label class="import">Import progress <input id="import" type="file" accept="application/json"></label>
+  </div>
+  <p id="filter-note"></p>
+  <div id="rows"></div>
+</section>
+
+<section id="tab-roadmap" class="tab">
+  <p id="roadmap-intro"></p>
+  <div id="roadmap"></div>
+</section>
+
+<section id="tab-missables" class="tab">
+  <div id="missables"></div>
+</section>
+
+<section id="tab-planner" class="tab">
+  <div id="planner"></div>
+</section>
+
+<section id="tab-sources" class="tab">
+  <div id="sources"></div>
+</section>
+
+<footer>
+  <p>Leonida Ledger — an unofficial fan guide. Grand Theft Auto, GTA and Leonida are trademarks of Rockstar Games. Trophy names and descriptions are the official PlayStation list as reported 18 November 2026; guides are written in the author's own words. MIT licensed.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
